@@ -1,0 +1,114 @@
+h1
+	color: #868f96
+	font-size: toRem(26px)
+	font-weight: 400
+	line-height: toRem(40px)
+
+.grid_layout
+	background-color: #ebeaee
+
+.books_container
+	max-width: toRem(1500px)
+	min-height: calc(100vh - 5rem)
+	margin: 0 auto
+	padding: toRem(34px) 0
+	background-color: #fff
+
+.top
+	margin: 0 toRem(40px) toRem(8px) toRem(40px)
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.view
+	border: 1px solid #ccc
+	cursor: default
+	span
+		padding: 0 toRem(5px)
+		display: inline-block
+		font-size: toRem(26px)
+		cursor: pointer
+		&.active
+			background-color: #eaeaea
+			pointer-events: none
+
+.grid_container
+	display: grid
+	&.tile
+		grid-template-columns: repeat(auto-fill, toRem(200px))
+		grid-gap: toRem(44px)
+		justify-content: center
+
+.list
+	.book_item
+		padding: 0 toRem(40px)
+		display: flex
+		text-align: left
+		& + .book_item
+			margin-top: toRem(60px)
+		.title
+			margin: 0 0 toRem(10px) 0
+			padding-right: toRem(20px)
+		button
+			min-width: toRem(170px)
+			margin: 0
+	.photo
+		flex: 0 0 toRem(200px)
+	.info
+		padding-left: toRem(40px)
+		display: flex
+		flex-direction: column
+	.main_info
+		display: flex
+		justify-content: space-between
+		align-items: start
+	.description
+		display: block
+		color: #58646d
+		font-size: toRem(26px)
+		line-height: toRem(35px)
+	.category
+		margin: toRem(25px) 0
+		display: inline-block
+		font-weight: 600
+
+.tile
+	.author
+		& + .author
+			display: none
+	.description
+		display: none
+
+.book_item
+	text-align: center
+	.photo
+		-webkit-box-shadow: 0 18px 25px -20px rgba(0, 0, 0, 0.75)
+		-moz-box-shadow: 0 18px 25px -20px rgba(0, 0, 0, 0.75)
+		box-shadow: 0 18px 25px -20px rgba(0, 0, 0, 0.75)
+	img
+		display: block
+		margin: 0 auto
+	.title
+		margin: toRem(17px) 0 toRem(6px)
+		display: block
+		color: #478cfe
+		font-size: toRem(27px)
+		line-height: toRem(30px)
+	.author
+		display: block
+		color: #868f96
+		font-size: toRem(21px)
+		line-height: toRem(25px)
+		span
+			color: #b4babe
+	button
+		margin-top: toRem(15px)
+		padding: toRem(10px) toRem(17px)
+		background-color: #f9f9f9
+		color: #58646d
+		font-size: toRem(26px)
+		line-height: toRem(40px)
+		text-transform: capitalize
+		border: 1px solid #cdd4dd
+		border-radius: toRem(5px)
+		cursor: pointer

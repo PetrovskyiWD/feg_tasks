@@ -1,0 +1,27 @@
+html
+	font: $font-regular #{$font-size / ($container-width / 100) + 'vw'}/#{$line-height} $font-family
+
+img
+	max-width: 100%
+	
+.tasks_list
+	min-height: 100vh
+	display: flex
+	justify-content: space-around
+	align-items: center
+	a
+		padding: 15px 20px
+		background-color: #eaeaea
+		color: #0060cc
+		font-size: 14px
+		text-decoration: none
+		border: 1px solid #ccc
+		border-radius: 5px
+		&:hover
+			background-color: #dedede
+
+
+@media screen and (max-width: 480px)
+	.tasks_list
+		min-height: 200px
+		flex-direction: column

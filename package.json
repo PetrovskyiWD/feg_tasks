@@ -1,0 +1,13 @@
+{
+  "name": "feg_tasks",
+  "version": "1.0.0",
+  "description": "Faria Education Group test tasks",
+  "main": "index.js",
+  "author": "PetrovskyiWD",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

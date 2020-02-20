@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Circle progress bar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="controls">
+		<input id="num" type="number" value="11">
+		<span>of</span>
+		<input id="numOf" type="number" value="14">
+	</div>
+	<div class="circle_wrap">
+		<svg class="progress_bar" width="200" height="200">
+			<circle class="circle_back" fill="transparent" stroke="#D5E5F7" stroke-width="12" stroke-linecap="round" cx="100" cy="100" r="76" />
+			<circle class="progress_circle" fill="transparent" stroke="#5275FB" stroke-width="12" stroke-linecap="round" cx="100" cy="100" r="76" />
+		</svg>
+		<div class="content">
+			<span class="numbers" data-num="11" data-num-of="14">11 of 14</span>
+			<span>weeks</span>
+		</div>
+	</div>
+
+	<script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+	<script defer src="./js/_03.js"></script>
+</body>
+</html>

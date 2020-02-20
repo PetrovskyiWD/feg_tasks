@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+	 v2.0 | 20110126
+	 License: none (public domain)
+	 Changed from CSS to SASS
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font: 400 0.83333vw/1 "Open Sans", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.tasks_list {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .tasks_list a {
+    padding: 15px 20px;
+    background-color: #eaeaea;
+    color: #0060cc;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px; }
+    .tasks_list a:hover {
+      background-color: #dedede; }
+
+@media screen and (max-width: 480px) {
+  .tasks_list {
+    min-height: 200px;
+    flex-direction: column; } }
+
+.bootstrap_form {
+  min-height: 100vh;
+  height: 100%;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  font-size: 14px; }
+
+.form_wrap {
+  width: 100%;
+  max-width: 400px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #F2FAFF;
+  transform: translate(-50%, -50%); }
+
+.form_top {
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea; }
+  .form_top img {
+    width: 20%; }
+  .form_top .title {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: capitalize; }
+    .form_top .title span {
+      color: #6284F1;
+      text-transform: capitalize; }
+  .form_top .demo {
+    margin: 15px 0;
+    display: block;
+    text-transform: uppercase; }
+
+form.bootstrap label {
+  margin-bottom: 5px;
+  display: block;
+  text-align: center; }
+
+h1 {
+  color: #868f96;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 2.5rem; }
+
+.grid_layout {
+  background-color: #ebeaee; }
+
+.books_container {
+  max-width: 93.75rem;
+  min-height: calc(100vh - 5rem);
+  margin: 0 auto;
+  padding: 2.125rem 0;
+  background-color: #fff; }
+
+.top {
+  margin: 0 2.5rem 0.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.view {
+  border: 1px solid #ccc;
+  cursor: default; }
+  .view span {
+    padding: 0 0.3125rem;
+    display: inline-block;
+    font-size: 1.625rem;
+    cursor: pointer; }
+    .view span.active {
+      background-color: #eaeaea;
+      pointer-events: none; }
+
+.grid_container {
+  display: grid; }
+  .grid_container.tile {
+    grid-template-columns: repeat(auto-fill, 12.5rem);
+    grid-gap: 2.75rem;
+    justify-content: center; }
+
+.list .book_item {
+  padding: 0 2.5rem;
+  display: flex;
+  text-align: left; }
+  .list .book_item + .book_item {
+    margin-top: 3.75rem; }
+  .list .book_item .title {
+    margin: 0 0 0.625rem 0;
+    padding-right: 1.25rem; }
+  .list .book_item button {
+    min-width: 10.625rem;
+    margin: 0; }
+
+.list .photo {
+  flex: 0 0 12.5rem; }
+
+.list .info {
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column; }
+
+.list .main_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; }
+
+.list .description {
+  display: block;
+  color: #58646d;
+  font-size: 1.625rem;
+  line-height: 2.1875rem; }
+
+.list .category {
+  margin: 1.5625rem 0;
+  display: inline-block;
+  font-weight: 600; }
+
+.tile .author + .author {
+  display: none; }
+
+.tile .description {
+  display: none; }
+
+.book_item {
+  text-align: center; }
+  .book_item .photo {
+    -webkit-box-shadow: 0 18px 25px -20px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 18px 25px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 18px 25px -20px rgba(0, 0, 0, 0.75); }
+  .book_item img {
+    display: block;
+    margin: 0 auto; }
+  .book_item .title {
+    margin: 1.0625rem 0 0.375rem;
+    display: block;
+    color: #478cfe;
+    font-size: 1.6875rem;
+    line-height: 1.875rem; }
+  .book_item .author {
+    display: block;
+    color: #868f96;
+    font-size: 1.3125rem;
+    line-height: 1.5625rem; }
+    .book_item .author span {
+      color: #b4babe; }
+  .book_item button {
+    margin-top: 0.9375rem;
+    padding: 0.625rem 1.0625rem;
+    background-color: #f9f9f9;
+    color: #58646d;
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    border: 1px solid #cdd4dd;
+    border-radius: 0.3125rem;
+    cursor: pointer; }
+
+.controls {
+  max-width: 50px;
+  margin: 20px; }
+  .controls input {
+    width: 100%; }
+  .controls span {
+    margin: 10px 0;
+    display: block;
+    font-size: 18px;
+    text-align: center; }
+
+.circle_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .circle_wrap .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 22px;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .circle_wrap .numbers {
+    font-weight: bold; }
+
+.progress_circle {
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 1s ease-in-out;
+  opacity: 0; }

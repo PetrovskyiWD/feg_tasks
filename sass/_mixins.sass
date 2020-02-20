@@ -1,0 +1,8 @@
+// =============================================================================
+// Px to rem
+// =============================================================================
+
+// Function for converting a px based font-size to rem.
+@function toRem($size)
+	$remSize: $size / 16px
+	@return #{$remSize}rem
